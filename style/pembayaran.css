@@ -1,0 +1,116 @@
+/* navbar */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-text {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #0075ff;
+}
+
+.vertical-line {
+    height: 40px;
+    border-left: 2px solid #0075ff;
+    margin: 0 10px;
+}
+
+
+
+.form-container {
+    background-color: #fff;
+    margin: 0;
+    padding: 5px;
+    padding-top: 16px;
+    border-radius: 5px;
+}
+
+/* garis judul */
+.line {
+    border-bottom: 2px solid #0075ff;
+    margin-bottom: 25px;
+}
+
+/* kolom input */
+.form-container .form-control {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* elemen form */
+.element {
+    padding: 0 30px;
+}
+
+.element button {
+    width: 100%;
+}
+
+.element.mb-4 {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.item-details h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333;
+}
+
+.table th{
+    text-align: center;
+}
+
+.table td{
+    text-align: center;
+}
+
+/* rincian */
+.cart-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary-item p {
+    font-size: 17px;
+    color: #000;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0075ff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 763px) {
+    .item-details {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .item-details h3 {
+        text-align: center;
+    }
+}

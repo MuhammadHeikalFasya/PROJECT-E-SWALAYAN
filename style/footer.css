@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --color-neutral-10: #171717;
+    --color-neutral-30: #000;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+footer {
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.footer-container {
+    padding: 3rem 3.5rem;
+}
+
+#footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_contacts img {
+    margin-bottom: 0.80rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: -0.50rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #0064d7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    color: white;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    list-style: none; /* Mengganti properti menjadi list-style */
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_contacts {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .col-md-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #footer_social_media {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    #footer_social_media .footer-link {
+        margin: 0 0.5rem; /* Jarak antara ikon media sosial */
+    }
+    
+    #footer_content {
+        flex-wrap: wrap;
+    }
+    
+    #footer_contacts {
+        width: 100%;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .col-md-4 {
+        margin-top: 1.5rem;
+        width: 50%;
+        text-align: center;
+    }
+}
+

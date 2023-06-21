@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Logo/icon_E-Swalayan.png">
+    <title>E-SWALAYAN - Belanja online mudah & praktis</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/footer.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-bg fixed-top"> 
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/img/Logo/LOGO E-SWALAYAN (2).png" alt="" width="210" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cari keperluan anda!" aria-label="Search">
+                    <button class="btn-search fas fa-search" type="submit"></button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline active" aria-current="page" href="/html/index.html"><b>Beranda</b></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link hover-underline" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Layanan Pelanggan</b>
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-phone"></i> Call Center : (021-6556)</a></li>
+                            <li><a class="dropdown-item" href="/html/layanan.html"><i class="fa fa-envelope"></i> Hubungi kami</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline fa-solid fa-cart-shopping mt-1" href="/html/keranjang.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="/html/Login/register.html"><b>Daftar</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="/html/Login/login.html"><b>Masuk</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!-- end navbar -->
+
+    <!-- Carousel -->
+    <div class="container pt-5">
+        <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="/img/Banner/banner1.jpg" class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="/img/Banner/banner3.jpg" class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="/img/Banner/banner2.jpg" class="d-block img-fluid" alt="...">
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </div>    
+    <!-- end carousel -->
+
+    <!-- Kategori -->
+    <div class="container mt-4">
+        <div class="judul-category">
+            <h5 class="text-judul"><b>KATEGORI</b></h5>
+        </div>
+            <div class="row text-center row-container mt-3">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="menu-kategori">
+                        <a href="#"><img src="/img/kategori/bumbu-dapur.png" class="img-category mt-4" alt=""></a>
+                        <p class="mt-2"><b>Kebutuhan Dapur</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="menu-kategori">
+                        <a href="#"><img src="/img/kategori/kebutuhan-bayi.png" class="img-category mt-4" alt=""></a>
+                        <p class="mt-2"><b>Kebutuhan Ibu & Anak</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="menu-kategori">
+                        <a href="#"><img src="/img/kategori/kebutuhan-rumah.png" class="img-category mt-4" alt=""></a>
+                        <p class="mt-2"><b>Kebutuhan Rumah</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="menu-kategori">
+                        <a href="/html/Kategori/makanan.html"><img src="/img/kategori/makanan.png" class="img-category mt-4" alt=""></a>
+                        <p class=" mt-2"><b>Makanan</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="menu-kategori">
+                        <a href="#"><img src="/img/kategori/minuman.png" class="img-category mt-4" alt=""></a>
+                        <p class="mt-2"><b>Minuman</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="menu-kategori">
+                        <a href="/html/Kategori/kategori.html"><img src="/img/kategori/menu.png" class="img-category mt-4" alt=""></a>
+                        <p class="mt-2"><b>Kategori lainnya</b></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- end kategori -->
+
+    <!-- Produk -->
+    <div class="container mt-4">
+        <div class="judul-category">
+            <h5 class="text-judul"><b>PRODUK REKOMENDASI</b></h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 1 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <a href="/html/Detail_produk/indomie_goreng.html"><img src="/img/Produk/indomie.png" class="card-img-top" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Indomie</b></h5>
+                            <h6 class="card-title">Mi Instan Goreng 84 g</h6>
+                            <p class="card-text"><b>Rp. 3.500</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 2 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <a href="/html/Detail_produk/sunco-2L.html"><img src="/img/Produk/sunco.jpg" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>SunCo</b></h5>
+                            <h6 class="card-title">Minyak Goreng <br>2 L</h6>
+                            <p class="card-text"><b>Rp. 35.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 3 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <a href="/html/Detail_produk/sari-roti-555g.html"><img src="/img/Produk/sari-roti.jpg" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Sari Roti</b></h5>
+                            <h6 class="card-title">Roti Tawar Jumbo 555 g</h6>
+                            <p class="card-text"><b>Rp. 18.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 4 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <a href="/html/Detail_produk/ekonomi-nipis-650ml.html"><img src="/img/Produk/ekonomi.jpg" class="card-img-top"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Ekonomi</b></h5>
+                            <h6 class="card-title">Sabun Jeruk Nipis 650 ml</h6>
+                            <p class="card-text"><b>Rp. 8.500</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 5 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/pure-life.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>PureLife</b></h5>
+                            <h6 class="card-title">Air Mineral 1500 ml</h6>
+                            <p class="card-text"><b>Rp. 7.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 6 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/sari-gandum.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Sari Gandum</b></h5>
+                            <h6 class="card-title">Biskuit Susu & Cokelat 108 g</h6>
+                            <p class="card-text"><b>Rp. 8.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 7 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/fiesta-spicy-chicken.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Fiesta</b></h5>
+                            <h6 class="card-title">Spicy Chicken 500 g</h6>
+                            <p class="card-text"><b>Rp. 70.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 8 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/Rinso-molto-rose-fresh-1,8.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Rinso Molto</b></h5>
+                            <h6 class="card-title">Rose Fresh Bubuk 1,8 kg</h6>
+                            <p class="card-text"><b>Rp. 64.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 9 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/indomie-ayam-bawang.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Indomie</b></h5>
+                            <h6 class="card-title">Mi Instan Ayam Bawang 69 g</h6>
+                            <p class="card-text"><b>Rp. 3.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 10 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/mp-xl20.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>MamyPoko</b></h5>
+                            <h6 class="card-title"> Pants X-tra Kering XL-20</h6>
+                            <p class="card-text"><b>Rp. 56.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 11 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/piattos-panggang-68g.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Piattos</b></h5>
+                            <h6 class="card-title">Snack Sapi Panggang 68 g</h6>
+                            <p class="card-text"><b>Rp. 12.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-4"> <!-- 12 -->
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/bengbeng-pouch.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Beng-Beng</b></h5>
+                            <h6 class="card-title">Wafer Rice Crispy Chocolate 20 g</h6>
+                            <p class="card-text"><b>Rp. 8.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-5">
+
+    <div class="container mt-5">
+        <div class="judul-category">
+            <h5 class="text-judul"><b>PRODUK TERBARU</b></h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <a href=""><img src="/img/Produk/indomie-takoyaki.jpg" class="card-img-top" alt="..."></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Indomie</b></h5>
+                            <h6 class="card-title">Takoyaki Japanese Ramen 91 g</h6>
+                            <p class="card-text"><b>Rp. 6.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/indomie-shoyu.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Indomie</b></h5>
+                            <h6 class="card-title">Shoyu Japanese Ramen 82 g</h6>
+                            <p class="card-text"><b>Rp. 6.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/indomie-tori-miso.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Indomie</b></h5>
+                            <h6 class="card-title">Tori Miso Ramen 86 g</h6>
+                            <p class="card-text"><b>Rp. 6.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/nescafe-cappucino.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Nescafe</b></h5>
+                            <h6 class="card-title">Coffee Drink Cappuccino 220ml</h6>
+                            <p class="card-text"><b>Rp. 7.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/nescafe-latte.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Nescafe</b></h5>
+                            <h6 class="card-title">Coffee Drink Latte 220 ml</h6>
+                            <p class="card-text"><b>Rp. 7.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/nescafe-caramel.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Nescafe</b></h5>
+                            <h6 class="card-title">Coffee Caramel Macchiato 220 ml</h6>
+                            <p class="card-text"><b>Rp. 7.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/mitu-baby-tb-anti.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Mitu Baby</b></h5>
+                            <h6 class="card-title">Antiseptic Wipes Tisu Basah 10 s</h6>
+                            <p class="card-text"><b>Rp. 8.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/kanzler-Cheese-Frankfurter.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Kanzler</b></h5>
+                            <h6 class="card-title">Cheese Frankfurter 360 g</h6>
+                            <p class="card-text"><b>Rp. 65.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/kanzler-Beef-Cocktail.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Indomie</b></h5>
+                            <h6 class="card-title">Beef Cocktail Sausage 250 g</h6>
+                            <p class="card-text"><b>Rp. 39.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/whiskas-Adult-Dry-Ocean-Fish.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Whiskas</b></h5>
+                            <h6 class="card-title">Adult Dry Ocean Fish 480 g</h6>
+                            <p class="card-text"><b>Rp. 29.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/Heinz-tomato-ketchup.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Heinz</b></h5>
+                            <h6 class="card-title">Tomato Ketchup Pet 325 g</h6>
+                            <p class="card-text"><b>Rp. 17.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                <div class="card-deck">
+                    <div class="card text-center">
+                        <div class="img-wrapper">
+                            <img src="/img/Produk/Cimory-yogurt-taro.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Cimory</b></h5>
+                            <h6 class="card-title">Yogurt Squeeze Purple Taro 120 g</h6>
+                            <p class="card-text"><b>Rp. 10.000</b></p>
+                            <hr>
+                            <a href="#" class="btn btn-primary d-grid">Beli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- end produk -->
+
+        <!-- footer -->
+        <footer>
+            <div class="container footer-container">
+                <div id="footer_content" class="row">
+                    <div id="footer_contacts" class="col-md-4">
+                        <img src="/img/Logo/LOGO E-SWALAYAN (2).png" alt="" width="250" height="60">
+                        <p><strong>PT. HUSEIN MAKMUR JAYA, Tbk</strong></p>
+                        <div class="">
+                            <p>Kunjungi Sosial Media Kami!</p>
+                        </div>
+                        <div id="footer_social_media">
+                            <a href="#" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <h4>Jadwal Toko Offline</h4>
+                        <ul>
+                            <li>Senin: 07.00 - 23.00</li>
+                            <li>Selasa: 07.00 - 23.00</li>
+                            <li>Rabu: 07.00 - 23.00</li>
+                            <li>Kamis: 07.00 - 23.00</li>
+                            <li>Jumat: 07.00 - 11.30</li>
+                            <li>Sabtu: 07.00 - 23.00</li>
+                            <li>Minggu: Tutup</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Kontak Kami</h4>
+                        <ul>
+                            <li>Alamat: Jln. Iskandar Muda No. 1-6, blang pidie</li>
+                            <li>Email: e-swalayan@gmail.com</li>
+                            <li>Telepon: 021-6556</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-content">
+                    <p>&copy; 2023 E-Swalayan. Hak Cipta Dilindungi.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/003c4604b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.container p{
+    line-height: 1.4;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+#check {
+    display: none;
+}
+
+.content {
+    display: none;
+    transition: 0.5s linear;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #0075ff;
+    text-decoration:underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+label:hover {
+    color: #000;
+}
+
+#check:checked ~ .content {
+    display: block;
+}
+
+#check:checked ~ label {
+    visibility: hidden;
+}
+
+#check:checked ~ label::after {
+    content: 'Lebih sedikit';
+    display: block;
+    visibility: visible;
+}

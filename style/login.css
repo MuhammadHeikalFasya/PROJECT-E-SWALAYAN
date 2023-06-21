@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #eff4ff; 
+}
+
+.nav-link {
+    color: #0075ff;
+}
+
+.nav-item {
+    font-size: 17px;
+    margin: 10px;
+}
+
+.nav-bg {
+    background-color: #fff;
+}
+
+/* animasi teks navbar */
+.hover-underline {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline::after {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+    cursor: pointer;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid; 
+}
+/* end animasi teks navbar */
+
+/* tombol seacrh */
+.btn-search {
+    padding: 0 15px;
+    color: #fff;
+    font-size: 17px;
+    background: #0075ff;
+    border: #0075ff;
+    border-radius: 10px;
+}
+
+.btn-search:hover {
+    background: black;
+    color: #fff;
+}
+
+/* kolom input */
+.form-control {
+    height: 40px;
+    width: 300px;
+    background: white;
+    min-width: 30% !important;
+    border-radius: 10px;
+    border: 2px solid #0075ff;
+}
+
+.navbar-toggler {
+    color: #0075ff;
+}
+/* end navbar */
+
+.btn-custom {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* mode tablet */
+@media (max-width: 1024px) {
+    .form-control {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .btn-search {
+        margin-top: 20px;
+    }
+
+    .container-content {
+        width: 80%;
+    }
+}
+
+/* mode smartphone */
+@media (max-width: 763px) {
+    .form-control {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .container-content {
+        width: 90%;
+    }
+    .btn-search {
+        margin-top: 20px;
+    }
+}
