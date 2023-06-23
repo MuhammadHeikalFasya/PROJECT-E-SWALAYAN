@@ -1,3 +1,26 @@
+// substring detail produk
+
+// Mengecek apakah mode perangkat adalah mode HP (<= 763px) atau mode tablet (<= 1024px)
+var isMobile = window.matchMedia("only screen and (max-width: 763px)").matches;
+var isTablet = window.matchMedia("only screen and (max-width: 1024px)").matches;
+
+if (isMobile || isTablet) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var cardTitleElements = document.querySelectorAll('.card-body .card-title');
+
+    cardTitleElements.forEach(function (element) {
+      var originalText = element.innerText;
+
+      if (originalText.length > 23) {
+        var truncatedText = originalText.substring(0, 23) + '...';
+        element.innerText = truncatedText;
+      }
+    });
+  });
+}
+
+
+
 // alamat
 $(document).ready(function () {
     $('#kecamatan').change(function () {
@@ -32,3 +55,7 @@ $(document).ready(function() {
         }
     });
 });
+
+
+
+
