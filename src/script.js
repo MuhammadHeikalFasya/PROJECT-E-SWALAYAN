@@ -11,8 +11,8 @@ if (isMobile || isTablet) {
         cardTitleElements.forEach(function (element) {
             var originalText = element.innerText;
 
-            if (originalText.length > 23) {
-                var truncatedText = originalText.substring(0, 23) + '...';
+            if (originalText.length > 15) {
+                var truncatedText = originalText.substring(0, 15) + '...';
                 element.innerText = truncatedText;
             }
         });
