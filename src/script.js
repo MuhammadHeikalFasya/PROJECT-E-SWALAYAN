@@ -5,18 +5,18 @@ var isMobile = window.matchMedia("only screen and (max-width: 763px)").matches;
 var isTablet = window.matchMedia("only screen and (max-width: 1024px)").matches;
 
 if (isMobile || isTablet) {
-  document.addEventListener('DOMContentLoaded', function () {
-    var cardTitleElements = document.querySelectorAll('.card-body .card-title');
+    document.addEventListener('DOMContentLoaded', function () {
+        var cardTitleElements = document.querySelectorAll('.card-body .card-title');
 
-    cardTitleElements.forEach(function (element) {
-      var originalText = element.innerText;
+        cardTitleElements.forEach(function (element) {
+            var originalText = element.innerText;
 
-      if (originalText.length > 23) {
-        var truncatedText = originalText.substring(0, 23) + '...';
-        element.innerText = truncatedText;
-      }
+            if (originalText.length > 23) {
+                var truncatedText = originalText.substring(0, 23) + '...';
+                element.innerText = truncatedText;
+            }
+        });
     });
-  });
 }
 
 
@@ -39,15 +39,15 @@ $(document).ready(function () {
 });
 
 // metode pembayaran
-$(document).ready(function() {
-    $('#metode').change(function() {
+$(document).ready(function () {
+    $('#metode').change(function () {
         var selectedMetode = $(this).val();
         var bankContainer = $('#bankContainer');
         var ewalletContainer = $('#ewalletContainer');
-        
+
         bankContainer.hide(); // Sembunyikan elemen select bank saat halaman dibuka
         ewalletContainer.hide(); // Sembunyikan elemen select E-Wallet saat halaman dibuka
-        
+
         if (selectedMetode === 'transfer_bank') {
             bankContainer.show(); // Tampilkan elemen select bank jika metode pembayaran "Transfer Bank" dipilih
         } else if (selectedMetode === 'ewallet') {
@@ -55,7 +55,3 @@ $(document).ready(function() {
         }
     });
 });
-
-
-
-

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Logo/icon_E-Swalayan.png">
+    <title>Admin Dasboard - E-Swalayan</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="/style/dasboard.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-bg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a class="navbar-brand me-auto" href="#">
+                <img src="/img/Logo/LOGO E-SWALAYAN (2).png" alt="" width="210" height="50">
+            </a>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" aria-current="page" href="/index.html">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" style="width: 270px;">
+        <div class="offcanvas-body">
+            <nav class="navbar-light">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="/admin/dasboard.html" class="nav-link me-2"><i
+                                class="fa-solid fa-gauge me-2"></i>Dasboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="/admin/db_produk.html" class="nav-link me-2 mt-3"><i
+                                class="fa-solid fa-box me-2"></i>Produk</a>
+                    </li>
+                    <li>
+                        <a href="/admin/db_pesanan.html" class="nav-link mt-3"><i class="fa-solid fa-inbox me-2"></i>Pesanan</a>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link mt-3" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa-solid fa-users me-2"></i>
+                            Pelanggan
+                            <i class="right-icon ms-auto fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <div>
+                                <ul class="navbar-nav ps-3">
+                                    <li>
+                                        <a href="/admin/db_pelanggan.html" class="nav-link px-2 mt-3">
+                                            <i class="fa-solid fa-address-card me-2"></i>
+                                            Data Pelanggan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 mt-3">
+                                            <i class="fas fa-exclamation-circle me-2"></i>
+                                            Keluhan
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- end offcanvas -->
+
+    <!-- konten -->
+    <main class="mt-5 pt-5">
+        <div class="container-fluid main-content ">
+            <div class="row">
+                <div class="col-md-12 fw-bold fs-3">Produk</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-6 d-flex justify-content-center mb-3">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Data Produk</strong></h5>
+                        </div>
+                        <div class="card-body ">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal"
+                                data-bs-target="#modalTambah">
+                                Tambah Produk
+                            </button>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Brand</th>
+                                        <th>Varian</th>
+                                        <th>Departemen</th>
+                                        <th>Kategori</th>
+                                        <th>Stok</th>
+                                        <th>Harga</th>
+                                        <th>Aksi</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>Indomie</td>
+                                        <td>Mie Instan Goreng 88 gr</td>
+                                        <td>Makanan</td>
+                                        <td>Makanan Instant</td>
+                                        <td>145 Pcs</td>
+                                        <td>Rp 3.000</td>
+                                        <td class="button-container d-flex flex-column align-items-center">
+                                            <a href="#" class="btn btn-primary mb-2"><i class="fas fa-pen"></i> Ubah</a>
+                                            <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                                Hapus</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td>Sunco</td>
+                                        <td>Minyak Goreng 2 L</td>
+                                        <td>Kebutuhan Dapur</td>
+                                        <td>Minyak dan Mentega</td>
+                                        <td>120 Pcs</td>
+                                        <td>Rp 35.000</td>
+                                        <td class="button-container d-flex flex-column align-items-center">
+                                            <a href="#" class="btn btn-primary mb-2"><i class="fas fa-pen"></i> Ubah</a>
+                                            <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                                Hapus</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td>Sari Roti</td>
+                                        <td>Roti Tawar Jumbo 555 g</td>
+                                        <td>Makanan</td>
+                                        <td>Roti dan Selai</td>
+                                        <td>20 Pcs</td>
+                                        <td>Rp 18.000</td>
+                                        <td class="button-container d-flex flex-column align-items-center">
+                                            <a href="#" class="btn btn-primary mb-2"><i class="fas fa-pen"></i> Ubah</a>
+                                            <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                                Hapus</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td>Ekonomi</td>
+                                        <td>Sabun Cuci Piring Jeruk Nipis 650 ml</td>
+                                        <td>Kebutuhan Rumah</td>
+                                        <td>deterjen dan Pembersih</td>
+                                        <td>90 Pcs</td>
+                                        <td>Rp 8.500</td>
+                                        <td class="button-container d-flex flex-column align-items-center">
+                                            <a href="#" class="btn btn-primary mb-2"><i class="fas fa-pen"></i> Ubah</a>
+                                            <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                                Hapus</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td>PureLife</td>
+                                        <td>Air Mineral 1500 ml</td>
+                                        <td>Minuman</td>
+                                        <td>Minuman Ringan</td>
+                                        <td>133 Pcs</td>
+                                        <td>Rp 7.000</td>
+                                        <td class="button-container d-flex flex-column align-items-center">
+                                            <a href="#" class="btn btn-primary mb-2"><i class="fas fa-pen"></i> Ubah</a>
+                                            <a href="#" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                                Hapus</a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+                                <!--Modal -->
+                                <div class="modal fade modal-lg" id="modalTambah" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Form Data Produk
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="#">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Brand</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Masukkan Brand Produk">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Varian</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Masukkan Varian Produk">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Detail Produk</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="1"></textarea>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Departemen</label>
+                                                        <select class="form-select">
+                                                            <option selected disabled>Pilih Departemen</option>
+                                                            <option value="1">Kebutuhan Dapur</option>
+                                                            <option value="2">Kebutuhan Ibu dan Anak</option>
+                                                            <option value="3">Kebutuhan Rumah</option>
+                                                            <option value="4">Makanan</option>
+                                                            <option value="5">Minuman</option>
+                                                            <option value="6">Personal Care</option>
+                                                            <option value="7">Makanan Hewan</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Kategori</label>
+                                                        <select class="form-select">
+                                                            <option selected disabled>Pilih Kategori</option>
+                                                            <option value="1">Bumbu Masak</option>
+                                                            <option value="2">Minyak dan Mentega</option>
+                                                            <option value="3">Bahan Pudding dan Agar-Agar</option>
+                                                            <option value="4">Makanan Ringan</option>
+                                                            <option value="5">Makanan Beku</option>
+                                                            <option value="6">Roti dan Selai</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="row g-3 align-items-center mb-3">
+                                                        <div class="col-auto">
+                                                            <label for="inputPassword6" class="col-form-label">Jumlah
+                                                                Stok</label>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <input type="number" class="form-control"
+                                                                aria-labelledby="passwordHelpInline">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <span id="passwordHelpInline" class="form-text">
+                                                                Pcs
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Harga</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-text">Rp</span>
+                                                            <input type="text" class="form-control" id="harga" placeholder="Harga">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Foto Produk</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Keluar</button>
+                                                <button type="button" class="btn btn-primary">Simpan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end modal -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end konten -->
+
+
+    <!-- memanggil fungsi javascript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <!-- memanggil fungsi font awesome -->
+    <script src="https://kit.fontawesome.com/003c4604b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

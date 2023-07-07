@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Logo/icon_E-Swalayan.png">
+    <title>Admin Dasboard - E-Swalayan</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="/style/dasboard.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-bg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a class="navbar-brand me-auto" href="#">
+                <img src="/img/Logo/LOGO E-SWALAYAN (2).png" alt="" width="210" height="50">
+            </a>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" aria-current="page" href="/index.html">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" style="width: 270px;">
+        <div class="offcanvas-body">
+            <nav class="navbar-light">
+                <ul class="navbar-nav">
+                    <li class="active">
+                        <a href="#" class="nav-link me-2"><i class="fa-solid fa-gauge me-2"></i>Dasboard</a>
+                    </li>
+                    <li>
+                        <a href="/admin/db_produk.html" class="nav-link me-2 mt-3"><i class="fa-solid fa-box me-2"></i>Produk</a>
+                    </li>
+                    <li>
+                        <a href="/admin/db_pesanan.html" class="nav-link mt-3"><i class="fa-solid fa-inbox me-2"></i>Pesanan</a>
+                    </li>
+                    <li>
+                        <a class="nav-link sidebar-link mt-3" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa-solid fa-users me-2"></i>
+                            Pelanggan
+                            <i class="right-icon ms-auto fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <div>
+                                <ul class="navbar-nav ps-3">
+                                    <li>
+                                        <a href="/admin/db_pelanggan.html" class="nav-link px-2 mt-3">
+                                            <i class="fa-solid fa-address-card me-2"></i>
+                                            Data Pelanggan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 mt-3">
+                                            <i class="fas fa-exclamation-circle me-2"></i>
+                                            Keluhan
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- end offcanvas -->
+
+    <!-- konten -->
+    <main class="mt-5 pt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 fw-bold fs-3">Dasboard</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center mb-3">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div><i class="fa-solid fa-dolly fa-costum"></i></div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Total Pesanan</strong></p>
+                            <h3 class="card-title">125</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center mb-3">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div> <i class="fa-solid fa-users fa-costum"></i></div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Total Pelanggan</strong></p>
+                            <h3 class="card-title">72</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center mb-3">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div><i class="fa-solid fa-sack-dollar fa-costum"></i></div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Total Pendapatan</strong></p>
+                            <h4 class="card-title">Rp 135.000.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center mb-3">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div><i class="fa-solid fa-cart-shopping fa-costum"></i></div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Pesanan Baru</strong></p>
+                            <h3 class="card-title">+24</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 d-flex justify-content-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Pesanan Terbaru</strong></h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Pelanggan</th>
+                                            <th>Tanggal</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Zulkifli</td>
+                                            <td>25-06-2023</td>
+                                            <td>Dikemas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Rahmat</td>
+                                            <td>25-06-2023</td>
+                                            <td>Dikemas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Nabila</td>
+                                            <td>25-06-2023</td>
+                                            <td>Dikemas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Natasya</td>
+                                            <td>25-06-2023</td>
+                                            <td>Dikirim</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Babul</td>
+                                            <td>25-06-2023</td>
+                                            <td>Dikirim</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Alif</td>
+                                            <td>25-06-2023</td>
+                                            <td>Dikirim</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Putri</td>
+                                            <td>25-06-2023</td>
+                                            <td>Dikirim</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Zulfi</td>
+                                            <td>23-06-2023</td>
+                                            <td>Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Putri</td>
+                                            <td>23-06-2023</td>
+                                            <td>Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Bima</td>
+                                            <td>23-06-2023</td>
+                                            <td>Diterima</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Produk Teratas</strong></h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Kuantitas Terjual</th>
+                                            <th>Pendapatan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SGM Eksplor 1+ Vanilla 900 gr</td>
+                                            <td>86 Pcs</td>
+                                            <td>Rp 7.611.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Merries Pants Good Skin XL - 26</td>
+                                            <td>68 Pcs</td>
+                                            <td>Rp 2.380.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sunco Minyak Goreng 2 L</td>
+                                            <td>64 Pcs</td>
+                                            <td>Rp 2.240.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rinso Molto Rose Fresh Bubuk 1,8 kg</td>
+                                            <td>53 Pcs</td>
+                                            <td>Rp 3.392.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ekonomi Sabun Jeruk Nipis 650 ml</td>
+                                            <td>49 Pcs</td>
+                                            <td>Rp 416.500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Masako Penyedap Rasa Sapi 250 gr</td>
+                                            <td>47 Pcs</td>
+                                            <td>Rp 517.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mamy Poko Pants X-tra Kering XL-20</td>
+                                            <td>43 Pcs</td>
+                                            <td>Rp 2.408.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fiesta Spicy Chicken 500 gr</td>
+                                            <td>36 Pcs</td>
+                                            <td>Rp 2.520.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Blue Band Serbaguna Margarin 200 gr</td>
+                                            <td>30 Pcs</td>
+                                            <td>Rp 630.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zwitsal Kids Shampo Soft 180 ml</td>
+                                            <td>29 Pcs</td>
+                                            <td>Rp 638.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end konten -->
+
+
+    <!-- memanggil fungsi javascript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <!-- memanggil fungsi font awesome -->
+    <script src="https://kit.fontawesome.com/003c4604b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
